@@ -184,6 +184,7 @@ a.active::after {
 }
 .hero button {
     min-width: 200px;
+    min-height: 50px;
     padding: 10px 32px;
 
     background-color: var(--accent);
@@ -198,6 +199,12 @@ a.active::after {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: 1px solid transparent;
     border-radius: 4px;
+
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero button:active {
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.7);
 }
 
 /* Прячем заголовки */
